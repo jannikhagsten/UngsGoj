@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #1a1d2e, #22243a);
+  color: white;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.player-count {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.player-count button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: gray;
+  color: black;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.player-count button.selected {
+  background: #5c6bc0;
+  color: white;
+}
+
+button {
+  background: #5c6bc0;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Popup til spillerens tur */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #444;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  min-width: 250px;
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin: 0 0 10px;
+}
+
+/* Pause overlay */
+#pauseOverlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+#pauseImage {
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+#pauseInfo {
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+}

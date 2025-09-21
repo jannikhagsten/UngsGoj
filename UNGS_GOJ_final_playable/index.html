@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>UNG's GOJ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- STARTSKÆRM -->
+  <div id="start-screen" class="screen">
+    <img src="logo.png" alt="Game Logo" class="logo">
+    <h1>UNG's GAME OF JOINT</h1>
+    <h2>Vælg antal spillere</h2>
+    <div id="player-count-buttons" class="player-count"></div>
+    <button id="continue-btn" disabled>FORTSÆT</button>
+  </div>
+
+  <!-- OPSÆTNINGSSKÆRM -->
+  <div id="player-setup-screen" class="screen hidden">
+    <h2 id="player-setup-title"></h2>
+    <form id="player-setup-form"></form>
+    <button id="start-game-btn">START SPIL</button>
+  </div>
+
+  <!-- SPILSKÆRM -->
+  <div id="game-screen" class="screen hidden">
+    <div id="board"></div>
+  </div>
+
+  <!-- POPUP til terning og felter -->
+  <div id="popup" class="popup">
+    <h2 id="popupTitle"></h2>
+    <div id="popupContent"></div>
+  </div>
+
+  <!-- PAUSE overlay -->
+  <div id="pauseOverlay">
+    <img src="pause.png" id="pauseImage" alt="Pause">
+    <div id="pauseInfo"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

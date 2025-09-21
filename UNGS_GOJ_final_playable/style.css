@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background: #111; color: #fff; margin:0; padding:0; overflow:hidden; }
+#game { width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; }
+#pauseOverlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); align-items:center; justify-content:center; flex-direction:column; z-index:10; }
+#pauseOverlay img { max-width:50%; }
+#popup { position:fixed; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; flex-direction:column; z-index:5; font-size:2em; }
+.hidden { display:none; }
